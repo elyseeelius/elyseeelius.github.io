@@ -1,11 +1,23 @@
 
 body {
     font-family: 'Titillium Web', sans-serif;
-    background: url('../images/porfolio.jpg');
+    background: url('../images/porfolio.jpg') center center no-repeat;
     background-position: center;
     background-color: rgb(133, 133, 133);
     color: #fff;
     margin: 0 auto;
+    
+    
+}
+body::before{
+            content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom left, rgb(0, 1, 75),rgba(224, 19, 19, 0.3));
+        opacity: .6; 
 }
 
 #skill {
@@ -39,7 +51,7 @@ li:last-child {
 }
 
 p {
-    margin: 20% auto;
+    margin: 18% auto;
     font-size: 3em;
     line-height: 60px;
     margin-left: 5%;
