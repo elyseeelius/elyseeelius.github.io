@@ -3,7 +3,7 @@ console.log(skillspan.textContent)
 
 
 let skillsArr = ['HTML', 'CSS', 'javaScript','Bootstrap','Node.js','React.js','Angular',
-'MongoDB','Express.js','PHP','Mysql','Data visualistion','Photoshop','Illustrator','inDesign',
+'MongoDB','Express.js','PHP','Mysql   ','Photoshop','Illustrator','inDesign',
 'Wordpress']
 setInterval(() => {
     changeSkill();
@@ -16,3 +16,17 @@ function changeSkill() {
         skillspan.textContent = currentSkill;
     }
 }
+const menu = document.getElementById('menu')
+const nav = document.getElementById('nav');
+const header =document.querySelector('header')
+const screenSize =screen.width;
+console.log(screenSize)
+
+menu.addEventListener('click',function(){
+    if (nav.style.display === "none") {
+      nav.style.display = "block";
+    } else{
+      nav.style.display = "none";
+    }
+})
+
