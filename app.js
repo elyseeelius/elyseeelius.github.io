@@ -22,7 +22,7 @@ const header =document.querySelector('header')
 const screenSize =screen.width;
 console.log(screenSize)
 
-menu.addEventListener('click',function(){
+menu.addEventListener('click',()=>{
     if (nav.style.display === "none") {
       nav.style.display = "block";
     } else{
