@@ -1,150 +1,192 @@
-<<<<<<< HEAD
-/* body {
-    width: 90%;
-    font-family: 'Titillium Web', sans-serif;
-    background-color: rgb(212, 212, 212);
-    margin: 0 auto;
-}
+html {
+    scroll-behavior: smooth;
 
-.container {
-    width: 90%;
-    font-family: 'Titillium Web', sans-serif;
-=======
-
-body {
-    font-family: 'Titillium Web', sans-serif;
->>>>>>> a66a6ab59a4cd432352a2907aaf797669dccedf4
-    background: url('../images/porfolio.jpg') center center no-repeat;
-    background-position: center;
-    background-color: rgb(133, 133, 133);
-    color: #fff;
-    margin: 0 auto;
-<<<<<<< HEAD
-
-
-=======
-    
-    
-}
-body::before{
-            content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-image: linear-gradient(to bottom left, rgb(0, 1, 75),rgba(224, 19, 19, 0.3));
-        opacity: .6; 
->>>>>>> a66a6ab59a4cd432352a2907aaf797669dccedf4
-}
-
-#skill {
-    color: #ffbb00;
-    padding: 2px 10px;
-    text-transform: capitalize;
-    border-radius: 10px;
 }
 
 ul {
-    padding: 0;
-    list-style: none;
-    margin-left: 45%;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    position: fixed;
+    top: 5%;
+    left: 60%;
+
 }
 
 li {
+    margin: 10px;
     display: inline;
-    margin: 50px;
-    color: #ffbb00;
+    list-style: none;
+
+
 }
 
 a {
+    color: #fff;
     text-decoration: none;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* =========================================================================================*
+                               STYLE FOR THE HOME PAGE
+   ========================================================================================= */
+#home {
+
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/porfolio.jpg');
+    background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(56, 16, 204));
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
 
 }
 
-li:last-child {
-    margin-right: 0;
+#home p {
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-size: 30px;
+    line-height: 40px;
 }
 
-<<<<<<< HEAD
-.presentation {
-=======
-p {
->>>>>>> a66a6ab59a4cd432352a2907aaf797669dccedf4
-    margin: 18% auto;
-    font-size: 3em;
-    line-height: 60px;
-    margin-left: 5%;
-}
-
-nav {
-    border-bottom: 1px solid rgba(255, 187, 0, 0.3);
-}
-
-svg,
-.svg2 {
+.svgItem {
     width: 30px;
-    height: 30px;
-    fill: #ffbb00;
     display: block;
-    margin: 30px 0;
-    padding: 0;
+    margin: 30px auto;
+    fill: #ffAD00;
+    ;
 }
 
 .svg {
     position: absolute;
-    top: 40%;
-    left: 93%;
+    top: 41%;
+    left: 5%;
 }
 
-.hireme {
+#hireme {
     position: absolute;
-    top: 20%;
-    left: 65%;
-    border-radius: 40px;
-    color: #ffbb00;
+    top: 25%;
+    left: 76%;
     width: 200px;
-    height: 50px;
-    border: 2px solid #ffbb00;
+    border: 2px solid #ffAD00;
     display: flex;
     justify-content: center;
-    align-items: center;
+    color: #ffad00;
+    border-radius: 10px;
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1em;
-}
-<<<<<<< HEAD
 
-/* ====================================================================================== 
-                                   PORTFOLIO
-   ====================================================================================== */
-/* .project {
-    width: 40%;
-    margin: 2%;
-    padding: 2%;
-    border: 2px solid orange;
-    float: right;
+}
+
+.skills {
+    color: #ffAD00;
+}
+
+/* =========================================================================================*
+                               STYLE FOR THE ABOUT PAGE
+   ========================================================================================= */
+#about {
+    background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(56, 16, 204));
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#about p {
+    padding: 20% 10%;
+    margin: 0 10%;
     text-align: center;
-    font-size: 16px;
-    border-radius: 5px;
+font-size:20px;
 }
 
-.project img {
-    width: 360px;
+/*========================================================================================= */
+
+/* =========================================================================================*
+                               STYLE FOR THE CONTACT PAGE
+   ========================================================================================= */
+#contact form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10% 0;
+}
+
+#contact label {
+    width: 20%;
+    display: inline-block;
+    padding: 10px;
+    font-size: 24px
+}
+
+#contact input,
+textarea,
+button {
+    width: 70%;
+    height: 50px;
+    border: 2px solid #ffad00;
     border-radius: 5px;
-   
+    padding: 10px;
+    margin: 20px auto;
+    font-size: 20px;
 }
-.project p{
-    margin: 10px;
-    font-size:16px;
-    line-height: normal;
+
+#message {
+    width: 70%;
+    border: 2px solid #ffad00;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px auto;
 }
-.project button{
-    border:2px solid orange;
-    border-radius:40px;
-    padding: 10px 50px;
-} */ 
-=======
->>>>>>> a66a6ab59a4cd432352a2907aaf797669dccedf4
+
+.message {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#message {
+    margin-left: 8px;
+    height: 80px;
+}
+
+button {
+    width: 50%;
+    margin: 4% 33%;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+   background:#ffAD00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#portfolio {
+    background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(56, 16, 204));
+    width: 100%;
+    height: 100%;
+}
+
+#resume {
+    background: linear-gradient(to bottom right, rgb(255, 255, 255),rgb(119, 119, 69));
+
+    width: 100%;
+    height: 100%;
+}
+
+#contact {
+    background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(56, 16, 204));
+    width: 100%;
+    height: 100%;
+}
