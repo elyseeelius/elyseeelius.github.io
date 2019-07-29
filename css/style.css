@@ -54,7 +54,9 @@ a {
     display: block;
     margin: 30px auto;
     fill: #ffAD00;
-    ;
+}
+.svgItem:hover{
+    width: 50px;
 }
 
 .svg {
