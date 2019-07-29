@@ -29,11 +29,11 @@ a {
                                STYLE FOR THE HOME PAGE
    ========================================================================================= */
 #home {
-
+ 
+    background-image:linear-gradient(to bottom right, rgba(0, 12, 80, 0.9), rgba(238, 125, 125, 0.8)),url('../images/porfolio.jpg');
     width: 100%;
     height: 100%;
-    background-image: url('../images/porfolio.jpg');
-    /* background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(56, 16, 204)); */
+    /* background-image: url('../images/porfolio.jpg'); */
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -56,7 +56,7 @@ a {
     fill: #ffAD00;
 }
 .svgItem:hover{
-    width: 50px;
+   fill:#fff;
 }
 
 .svg {
@@ -70,10 +70,10 @@ a {
     top: 25%;
     left: 76%;
     width: 200px;
-    border: 2px solid #ffAD00;
+    border: 2px solid rgb(255, 255, 255);
     display: flex;
     justify-content: center;
-    color: #ffad00;
+    color: #ffffff;
     border-radius: 10px;
     text-transform: uppercase;
 
