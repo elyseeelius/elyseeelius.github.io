@@ -108,7 +108,7 @@ a {
 
 #portfolio {
     padding: 1%;
-    background: #ffcd61;
+    background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(56, 16, 204));
     width: 100%;
     height: 100%;
     display: flex;
