@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <script src="./script.js/lightbox-plus-jquery.min.js"></script>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -52,43 +54,62 @@
                 </svg>
             </a>
         </div>
-        <a href="#contact"><div id="hireme"><h2>Hire me</h2></div><a>
+        <a href="#contact">
+            <div id="hireme">
+                <h2>Hire me</h2>
+            </div><a>
     </div>
 
     <div id="about">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tenetur doloremque odit quo libero rerum earum illo tempore necessitatibus reprehenderit enim nostrum, sapiente fuga assumenda provident dolores ab dolorum nemo. <br>
-            <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero quo cupiditate facilis porro obcaecati beatae iure fuga debitis delectus voluptate.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tenetur doloremque odit quo libero rerum
+            earum illo tempore necessitatibus reprehenderit enim nostrum, sapiente fuga assumenda provident dolores ab
+            dolorum nemo. <br>
+            <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero quo cupiditate facilis porro obcaecati
+            beatae iure fuga debitis delectus voluptate.</p>
     </div>
     <div id="portfolio">
-        <div class="project"><img src="./images/joshua-earle-9idqIGrLuTE-unsplash.jpg" alt=""></div>
-        <div class="project"><img src="./images/joshua-earle-9idqIGrLuTE-unsplash.jpg" alt=""></div>
-        <div class="project"><img src="./images/joshua-earle-9idqIGrLuTE-unsplash.jpg" alt=""></div>
-        <div class="project"><img src="./images/joshua-earle-9idqIGrLuTE-unsplash.jpg" alt=""></div>
-        <div class="project"><img src="./images/joshua-earle-9idqIGrLuTE-unsplash.jpg" alt=""></div>
-        <div class="project"><img src="./images/joshua-earle-9idqIGrLuTE-unsplash.jpg" alt=""></div>
-        <div class="project"><img src="./images/joshua-earle-9idqIGrLuTE-unsplash.jpg" alt=""></div>
-        <div class="project"><img src="./images/joshua-earle-9idqIGrLuTE-unsplash.jpg" alt=""></div>
-        <div class="project"><img src="./images/joshua-earle-9idqIGrLuTE-unsplash.jpg" alt=""></div>
+        <div class="project"> <a href="./images/interactivegallery.jpg" data-lightbox="myGallery" data-title="interactive Gallery"> <img
+                    src="images/interactivegallery.jpg"></a>
+                  
+            </div>
+        <div class="project"><a href="images/game.jpg" data-lightbox="myGallery" data-title="Game show app"> <img
+                    src="./images/game.jpg"></a></div>
+
  
+        <div class="project"> <a href="images/webapp.jpg" data-lightbox="myGallery" data-title="Web app"> <img
+                    src="./images/webapp.jpg"></a></div>
+
+        <div class="project"> <a href="images/styleguide.jpg" data-lightbox="myGallery" data-title="Style guide"> <img
+                    src="./images/styleguide.jpg"></a></div>
+        <div class="project"> <a href="images/number1.jpg" data-lightbox="myGallery" data-title="Personal Profile"> <img
+                    src="./images/number1.jpg"></a></div>
+        <div class="project"> <a href="images/directory.jpg" data-lightbox="myGallery" data-title="Employee Directory"> <img
+                    src="./images/directory.jpg"></a></div>
+        <div class="project"> <a href="images/responsiveWeb.jpg" data-lightbox="myGallery" data-title="Response"> <img
+                    src="./images/responsiveWeb.jpg"></a></div>
+        <div class="project"> <a href="images/form.jpg" data-lightbox="myGallery" data-title="Response"> <img
+            src="./images/form.jpg"></a></div>
+                    
     </div>
-    <div id="resume"></div>
+    <!-- <div id="resume"></div> -->
     <div id="contact">
         <form action="">
-        <label for="firstname">First name</label>
-        <input type="text" name="fistname" id="firstname" placeholder="First name">
+            <label for="firstname">First name</label>
+            <input type="text" name="fistname" id="firstname" placeholder="First name">
 
-        <label for="lastname">Last name</label>
-        <input type="text" name="lastname" id="lastname" placeholder="Last name">
+            <label for="lastname">Last name</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Last name">
 
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Email">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email">
             <div class="message">
-        <label for="message" id="mess">Message</label>
-        <textarea name="message" id="message" placeholder="Message"></textarea>
+                <label for="message" id="mess">Message</label>
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+            </div>
+            <button type="submit" id="send">SEND</button>
+        </form>
     </div>
-        <button type="submit" id="send">SEND</button>
-    </form>
-    </div>
+
 </body>
 
 </html>
