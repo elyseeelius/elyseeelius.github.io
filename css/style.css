@@ -2,17 +2,18 @@ html {
     scroll-behavior: smooth;
     color: #fff;
 }
-body{
+
+body {
     background: linear-gradient(to right bottom,
-        rgba(0, 0, 128, 0.5),
-        rgba(128, 0, 128, 0.5)),
-    url(../images/photos/porfolio.jpg)fixed;
+            rgba(0, 0, 128, 0.5),
+            rgba(128, 0, 128, 0.5)),
+        url(../images/photos/porfolio.jpg)fixed;
     background-size: cover;
-  
-    font-family: 'Ubuntu',sans-serif;
+
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 10px;
-    
- }
+
+}
 
 /* =========================================================================================*
                                STYLE FOR THE HOME PAGE
@@ -50,16 +51,16 @@ a {
     max-width: 200px;
     margin: 0 auto;
     border-radius: 5px;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     justify-content: center;
     text-transform: uppercase;
     font-size: 0.9em;
+}
 
-} 
 #home p {
     width: 90%;
-    margin:20px auto;
+    margin: 20px auto;
     text-align: center;
     line-height: 30px;
 }
@@ -68,10 +69,12 @@ a {
     color: #ffad00;
     font-size: 1.5em;
 }
-ul{
+
+ul {
     padding: 0;
 }
-li{
+
+li {
     text-align: center;
 }
 
@@ -79,64 +82,70 @@ li{
     width: 25px;
     margin: 10px;
     fill: orange;
-    
-}
-.svgIcon:hover{
-    fill:#fff;
+
 }
 
-.svgWrapper, .aboutIcon {
+.svgIcon:hover {
+    fill: #fff;
+}
+
+.svgWrapper,
+.aboutIcon {
     width: 40%;
     margin: 10px auto;
     display: flex;
-    clear:both;
+    clear: both;
 }
-@media (min-width:768px){
- li{
-     display: inline-block;
-     margin:10px;
- }
 
- ul{
- display: flex;
- justify-content: center;
- }
- nav{
-      width: 100%;
-     margin: 10px auto;
- }
- .svgWrapper,.hireme{
-     margin:8% auto;
- }
-
- /* .svgIcon{
-     width:40px
- } */
- #home p{
-   text-align: center;
-   font-size: 1.5em;
- }
-}
-@media (min-width:1024px){
-    body{
-        width: 90%;
-        margin:0 auto;
+@media (min-width:768px) {
+    li {
+        display: inline-block;
+        margin: 10px;
     }
-.svgWrapper{
-    position: absolute;
-    display: block;
-    top:37%;
-    left: -15%;
+
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .svgWrapper,
+    .hireme {
+        margin: 8% auto;
+    }
+
+    #home p {
+        text-align: center;
+        font-size: 1.5em;
+    }
 }
-#home p {
-    position: absolute;
-    top: 47%;
-    left: 15%;
-    text-align: left;
-    font-size: 2em;
-    line-height: normal;
-  
-}
+
+@media (min-width:1024px) {
+    body {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .svgWrapper {
+        position: absolute;
+        display: block;
+        top: 37%;
+        left: -15%;
+    }
+
+    #home p {
+        position: absolute;
+        top: 47%;
+        left: 15%;
+        text-align: left;
+        font-size: 2em;
+        line-height: normal;
+
+    }
 
 }
 
@@ -158,10 +167,23 @@ li{
     text-align: center;
 
 }
-@media(min-width:768px){
-    #about p{
+
+@media(min-width:768px) {
+    #about p {
         font-size: 1.5em;
-    }    
+        width: 70%;
+        margin: 0 auto;
+        line-height: 30px;
+    }
+}
+
+.aboutIcon {
+    display: flex;
+    justify-content: center
+}
+
+#about a {
+    margin: 0px;
 }
 
 /* =========================================================================================*
@@ -192,15 +214,16 @@ img {
     margin: 10px;
     font-size: 12px;
 }
+
 li {
     list-style-type: circle;
-    list-style-image: 
+    list-style-image:
 
-  }
+}
 
 #portfolio p {
     margin: 0;
-    padding:5px 0;
+    padding: 5px 0;
     width: 100%;
     background: rgba(0, 0, 128, 0.6);
     position: absolute;
@@ -210,41 +233,47 @@ li {
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-.title{
-    padding:10px;
+
+.title {
+    padding: 10px;
     background: rgba(250, 250, 250, 0.1);
     font-weight: bold;
 }
-li{
-    margin:10px;
-    list-style:none;
+
+li {
+    margin: 10px;
+    list-style: none;
 }
-ul{
-    padding:0 auto;
+
+ul {
+    padding: 0 auto;
 
 }
-h2{
+
+h2 {
     width: 80%;
-    margin:0 auto;
-    padding:10px auto;
+    margin: 0 auto;
+    padding: 10px auto;
     text-align: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-@media(min-width:768px){
-#portfolio{
-    margin:0 auto;
+
+@media(min-width:768px) {
+    #portfolio {
+        margin: 0 auto;
+    }
+
+    #portfolio .project {
+        position: relative;
+        display: inline-block;
+        width: 49%;
+        padding: 0 auto;
+        margin: 10px auto;
+        border: 1px solid #fff;
+        border-radius: 5px;
+    }
 }
 
-#portfolio .project {
-    position: relative;
- display: inline-block;
-    width: 49%;
-    padding:0 auto;
-    margin: 10px auto;
-    border: 1px solid #fff;
-    border-radius: 5px;
-}
-}
 /* =========================================================================================*
                                STYLE FOR THE RESUME PAGE
    ========================================================================================= */
@@ -252,11 +281,12 @@ h2{
     /* width: 100%;
     height: 100%; 
 }*/
-#resume p{
+#resume p {
     text-align: center;
-    margin:0 20px;
+    margin: 0 20px;
 }
-h3{
+
+h3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -273,64 +303,76 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: center;
-  
-}
-.upIcon{
-    position:fixed;
-    bottom:0;
-    right:0
-}
-form{
-    width: 90%;
-    margin:20px auto;
-}
-label{
-   display: none;
-}
-input,button{
- width: 100%;
- margin:10px auto;
-padding:10px;
-border-radius: 5px;
-border:1px solid rgba(255, 255, 255, 0.2);
+
 }
 
-input{
-    background-color: rgba(255, 255, 255, 0.2);
-    color:#fff;
+.upIcon {
+    position: fixed;
+    bottom: 0;
+    right: 0
 }
-input:focus,#message:focus{
-    background:rgb(255, 255, 255);
-    color:rgb(75, 75, 75);
+
+form {
+    width: 90%;
+    margin: 20px auto;
 }
-input::placeholder{
-    color:#fff;
+
+label {
+    display: none;
 }
-#message{
+
+input,
+button {
     width: 100%;
-    margin:10px auto;
-    border-radius:5px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+input:focus,
+#message:focus {
+    background: rgb(255, 255, 255);
+    color: rgb(75, 75, 75);
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+#message {
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.2);
     height: 100px;
-    color:#fff;
-    padding:10px;
-    border:1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
-button{
+
+button {
     align-content: center;
-    color:#fff;
-    background-color:orange;
-    border:0;
-    font-size:1.5em;
+    color: #fff;
+    background-color: orange;
+    border: 0;
+    font-size: 1.5em;
     text-transform: uppercase;
 }
-@media(min-width:768px){
-    form{
+
+@media(min-width:768px) {
+    form {
         width: 75%;
     }
 }
-@media(min-width:1024px){
-    form{
+
+@media(min-width:1024px) {
+    form {
         width: 50%;
     }
 }
@@ -338,19 +380,11 @@ button{
 /* ============================================================
                    Animation for typing effect 
    ============================================================ */
-   span .skills{
+span .skills {
     animation: type 3s steps(10);
-    overflow:hidden;
+    overflow: hidden;
     white-space: space nowrap;
     font-family: consolas;
     border-right: 4px solid black
-   }
-   @keyframes type{
-       0%{
-           width: 0ch;
-       }
-       100%{
-           width:10ch 
-       }
+}
 
-   }
